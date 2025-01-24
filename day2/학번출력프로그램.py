@@ -12,3 +12,4 @@ class_num = student_id[1:2] # [2]랑 같다.
 student_num = student_id[2:4]
 
 print(f"{grade}학년 {class_num}반 {student_num}번")
+

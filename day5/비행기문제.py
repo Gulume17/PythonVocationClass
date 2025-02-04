@@ -10,19 +10,29 @@
 한명 밖에 안 탔으니까 다시 여권 유무 묻는 반복을 실행
 
 여권을 가진 2명이 나타나서 승객이 다 채워졌다면
-비행기 출발 후 다음 비행기 운항 (1번 빼 비행기 탑승 준비!) 출력
+비행기 출발 후 다음 비행기 운항 (1번 째 비행기 탑승 준비!) 출력
 '''
 
-# 숙제
+flight = 1
+while flight <= 3:
+    print(f"{flight}번째 비행기 탑승 준비!")
+    passenger = 1
+    count = 0
+    while count < 2:
+        passport = input(f"{passenger}번째 고객님 여권이 있나요? (y/n) : ")
+        if passport != "y":
+            print("여권이 없어요! 다음 승객 기다리기...")
+            passenger += 1
+            continue
 
-airplane = 0
-b=0
-while airplane < 3:
-    airplane += 1
-    print(f"{airplane}번째 비행기 탑승 준비!")
-    while b < 2:
-        b += 1
-        print(f"{}")
+        print(f"{passenger}번째 승객이 탑승했어요!")
+        count += 1
+        passenger += 1
+
+    print("비행기 출발!")
+    flight += 1
+    print()
+
 
 
 

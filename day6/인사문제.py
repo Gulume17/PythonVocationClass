@@ -4,11 +4,12 @@
 if문 + for문
 '''
 
-a = 3
-if a ==3:
-    print(f"{a}번째 안녕하세요")
-elif a<0:
-    print("잘못된 입력입니다.")
+num = int(input("숫자를 입력하세요 : "))
+if num <= 0:
+    print("잘못된 입력입니다. 1이상의 수를 입력하세요.")
+else:
+    for hello in range(num):
+        print(f"{hello + 1}번째 안녕하세요")
 
 
 

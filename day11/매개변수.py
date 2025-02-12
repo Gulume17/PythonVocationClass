@@ -25,7 +25,7 @@ hello("지수")
 def plus(a,b):
     print(a + b)
 
-plus(a:10,b:20)
-plus(a:5,b:20)
+# plus(a:10,b:20)
+# plus(a:5,b:20)
 
 
